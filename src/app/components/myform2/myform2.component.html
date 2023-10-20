@@ -1,0 +1,15 @@
+<form [formGroup]="myForm" (ngSubmit)="onSubmit()">
+  <label for="firstName">First Name</label>
+  <input type="text" id="firstName" formControlName="firstName" />
+  <div *ngIf="myForm.get('firstName').hasError('required')">
+    First name is required.
+  </div>
+  <div *ngIf="myForm.get('firstName').hasError('minlength')">
+    First name must be at least 2 characters.
+  </div>
+  <!-- Repeat for other form controls -->
+
+  <button type="submit" [disabled]="myForm.invalid">Submit</button>
+</form>
+
+<!-- Repeat for other form controls -->

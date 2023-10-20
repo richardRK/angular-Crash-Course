@@ -9,8 +9,9 @@ import { TasksComponent } from './components/tasks/tasks.component';
 import { TaskItemComponent } from './components/task-item/task-item.component';
 import { ContentExampleComponent } from './components/content-example/content-example.component';
 import { FromeventExampleComponent } from './components/fromevent-example/fromevent-example.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MyformComponent } from './components/myform/myform.component';
+import { Myform2Component } from './components/myform2/myform2.component';
 
 
 
@@ -24,12 +25,14 @@ import { MyformComponent } from './components/myform/myform.component';
     ContentExampleComponent,
     FromeventExampleComponent,
     MyformComponent,
+    Myform2Component,
     
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
